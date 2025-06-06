@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Guadiana Aguirre" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedesSociales</title>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <style type="text/css">
+        html{
+            width: 100vw;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            background-color: aliceblue;
+            margin: 0;
+            padding: 0;
+            
+            background: linear-gradient(to bottom, #88e0d186, #00f8eca6);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #333;
+        }
+
+        .titulo-llamativo {
+            font-size: 4rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #ff8c00, #ff2e63, #6a0572);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-out;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+
+        
+        header{
+            padding: 15px;
+            display: flex;
+            width: 100vw;
+            height: 100px;
+            box-sizing: border-box;  
+            align-items: center;
+        }
+
+
+
+
+
+        /*Para la vista principal de la pagina*/
+        main{
+            width: -webkit-fill-available;
+            box-sizing: border-box;
+        }
+        #VistaPrincipal{
+            background-color: rgba(46, 54, 54, 0.05);
+            justify-content: center;
+            justify-items: center;
+            justify-self: center;
+            align-items: center;
+            align-content: center;
+            align-self: center;
+            margin: 0px 15px;
+            box-sizing: border-box;
+            width: -webkit-fill-available;
+        }
+        
+        h2{
+            text-align: center;
+            background: linear-gradient(90deg, #f005e4, #4735e9, #cc0c16);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 40px;
+        }
+        div.lista{
+            display: grid;
+            background-color: #a9a9a92f;
+            width: 200px;
+            height: 200px;
+            align-items: center;
+            align-content: center;
+            align-self: center;
+            justify-content: center;
+            justify-items: center;
+            justify-self: center;
+            margin: 10px 15px;
+            box-sizing: border-box;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        
+        div.lista img{
+            width: 150px;
+            height: 150px;
+            display: flex;
+        }
+        div.lista img.duo{
+            width: 150px;
+            height: 150px;
+            border-radius: 30px;
+        }
+
+        div.lista a{
+            text-decoration: none;
+            color: darkblue;
+            
+        }
+        
+        div.lista button{
+            border: none;
+            border-radius: 10px;
+            transition-duration: 0.4s;
+            padding: 8px;
+            align-items: center;
+            align-content: center;
+            align-self: center;
+            justify-content: center;
+            justify-items: center;
+            justify-self: center;
+        }
+
+        div.lista button:hover {
+            background-color: #04AA6D; /* Green */
+            color: white;
+        }
+        
+        div.lista a:hover{
+            color: white;
+        }
+
+        li{
+            display: inline-block;
+            
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        
+        
+        
+        /*Para el Estilo del footer abajo*/
+        footer{
+            position: fixed;
+            bottom: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0px 5px;
+        }
+        footer > p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        p#derecha{
+            text-align: end;
+            
+        }
+
+
+
+
+        /*Pra que sea responsivo a varias pantallas*/
+        @media (max-width: 600px){
+            .titulo-llamativo{
+                font-size: 35px;
+            }
+            h2{
+                font-size: 30px;
+            }
+            footer{
+                font-size: 12px;
+            }
+            div.lista{
+                width: 100px;
+                height: 85px;
+                margin: 5px;
+                box-sizing: border-box;
+            }
+            div.lista a{
+                font-size: 12px;
+            }
+            div.lista img{
+            width: 40px;
+            height: 40px;
+            
+            }
+            div.lista img.duo{
+                width: 40px;
+                height: 40px;
+                border-radius: 30px;
+            }
+            ul{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            footer > p{
+            font-size: 10px;
+            }
+        }
+
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo-llamativo">Enlaces y contenido variado</h1>
+    </header>
+
+    <main>
+        <h2>Contenido Social</h2>
+        <section id="VistaPrincipal">
+            <ul class="lista">
+                <li>
+                    <div class="lista">
+                        <button onclick="window.location.href='https://www.tiktok.com/@christian_ga81?_t=ZM-8wppHKVBcEn&_r=1'"><img src="./tik-tok.png" alt="Logo de ticktok">TICK-TOCK</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="lista">
+                        <button onclick="window.location.href='https://www.facebook.com/share/15vc5uNACL/'"><img src="./facebook.png" alt="Logo de facebook">FACEBOOK</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="lista">
+                        <button onclick="window.location.href='https://www.instagram.com/christian_ga81?igsh=NWl6cXE2ZGdvbWxq'"><img src="./Instagram.png" alt="Logo de facebook">INSTAGRAM</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="lista">
+                        <button onclick="window.location.href='https://www.duolingo.com/profile/Christian_GA?via=share_profile_link'"><img class="duo" src="https://imgs.search.brave.com/wfFblWqfRTXHrGuRi7cQvmhIuqdtfVOVtcjrD5RHsxw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L3lv/dXR1YmVwZWRpYS9p/bWFnZXMvYS9hZi9E/dW9saW5nby5wbmcv/cmV2aXNpb24vbGF0/ZXN0P2NiPTIwMjQw/NTMxMDgyMzMwJnBh/dGgtcHJlZml4PWVz" alt="Logo de facebook">DUOLINGO</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="lista">
+                        <button onclick="window.location.href='https://wa.me/qr/6ZOOTSPT2UBGD1'"><img src="./whatsapp.png" alt="Logo de facebook">WHATSAPP</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>&copy Todos los derechos reservados.</p>
+        <p id="derecha">Christian Manuel Guadiana Aguirre</p>
+    </footer>
+</body>
+</html>
